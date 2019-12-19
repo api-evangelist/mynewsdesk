@@ -1,0 +1,503 @@
+{
+    "id": "bdc3e4c266d45968f5a80e784e856ca0",
+    "name": "My News Desk Pressroom List",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "fe1fdf49d3b2df7bbd82120fb226accc",
+            "name": "Create Comment",
+            "url": "httpswww.mynewsdesk.com\/services\/pressroom\/create_comment\/",
+            "description": "Create Comment",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "blog",
+                    "description": "URL of commenters blog\/website.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "Content of comment.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "commentable_id",
+                    "description": "ID of the material that is commented.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "email",
+                    "description": "Email address of commenter.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "Name of commenter.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type_of_media",
+                    "description": "Type of material. Valid values are pressrelease, news, blog_post, event, image, video, document and contact_person.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "unique key",
+                    "description": "The MyNewsDesk API Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "user_ip",
+                    "description": "IP number of commenter. This is needed for easier moderation and spam protection.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bdc3e4c266d45968f5a80e784e856ca0",
+            "rawModeData": ""
+        },
+        {
+            "id": "bd14f2465cce4341b0edd25f316aedbf",
+            "name": "Lists news",
+            "url": "httpswww.mynewsdesk.com\/services\/pressroom\/list\/",
+            "description": "Lists news",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "archived",
+                    "description": "Fetch items marked as archived, this is useful for fetching old events. Example: true u2013 Fetches all the items, including archived ones",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "If format is JSON and callback is specified, the JSON response is wrapped in a function call with the specified callback name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Specify the format of the response: RSS 2.0, JSON or full XML.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Set the maximum number of items in the response. This cannot be more than 100.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Specify which item (sequentially) should be first, skipping preceding items.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "order",
+                    "description": "Specify the sort order of the result: publish date (published), latest update (updated) or creation date (created).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pressroom",
+                    "description": "Set the pressroom to fetch material from. Examples: se u2013 Swedish pressroom, uk u2013 United Kingdom pressroom.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type_of_media",
+                    "description": "Type of material. Valid values are pressrelease, news, blog_post, event, image, video, document and contact_person.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "unique key",
+                    "description": "The MyNewsDesk API Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bdc3e4c266d45968f5a80e784e856ca0",
+            "rawModeData": ""
+        },
+        {
+            "id": "1126fe13e50b910d840da4662156e0ba",
+            "name": "Pressroom Info",
+            "url": "httpswww.mynewsdesk.com\/services\/pressroom\/pressroom_info\/",
+            "description": "Pressroom Info",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "pressroom",
+                    "description": "Set the pressroom to fetch material from. Examples: se u2013 Swedish pressroom, uk u2013 United Kingdom pressroom.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "unique key",
+                    "description": "The MyNewsDesk API Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bdc3e4c266d45968f5a80e784e856ca0",
+            "rawModeData": ""
+        },
+        {
+            "id": "9387238162b77af822fba77e01ca3eaf",
+            "name": "News Search",
+            "url": "httpswww.mynewsdesk.com\/services\/pressroom\/search\/",
+            "description": "News Search",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "callback",
+                    "description": "If format is JSON and callback is specified, the JSON response is wrapped in a function call with the specified callback name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "date_end",
+                    "description": "End date. Valid only with date modes between and before. Format: YYYY-MM-DD, e.g. 2006-12-31.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "date_mode",
+                    "description": "Specifies how the date parameters are used. Valid values are: between, on, before or after.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "date_on",
+                    "description": "Date. Valid only with date mode on. Format: YYYY-MM-DD, e.g. 2006-12-31",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "date_start",
+                    "description": "Start date. Valid only with date modes between and after. Format: YYYY-MM-DD, e.g. 2006-12-31.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Specify the format of the response: RSS 2.0, JSON or full XML.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Set the maximum number of items in the response. This cannot be more than 100.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Page number in the search result",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pressroom",
+                    "description": "Set the pressroom to fetch material from. Examples: se u2013 Swedish pressroom, uk u2013 United Kingdom pressroom.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "query",
+                    "description": "Search string. The search is performed on all text fields in the material, like the header, summary and body. Searching supports advanced queries with AND\/OR\/NOT, and wildcards (*).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type_of_media",
+                    "description": "Type of material. Valid values are pressrelease, news, blog_post, event, image, video, document and contact_person.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "unique key",
+                    "description": "The MyNewsDesk API Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bdc3e4c266d45968f5a80e784e856ca0",
+            "rawModeData": ""
+        },
+        {
+            "id": "f4c696bff9e7279ef6640139869be33f",
+            "name": "Send Email",
+            "url": "httpswww.mynewsdesk.com\/services\/pressroom\/send_email\/",
+            "description": "Send Email",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "from",
+                    "description": "Name of sender.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "item_id",
+                    "description": "ID of the material to be fetched.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "message",
+                    "description": "Personal message from the sender to the recipient.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "to_email",
+                    "description": "Recipient email address.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type_of_media",
+                    "description": "Type of material. Valid values are pressrelease, news, blog_post, event, image, video, document and contact_person.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "unique key",
+                    "description": "The MyNewsDesk API Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bdc3e4c266d45968f5a80e784e856ca0",
+            "rawModeData": ""
+        },
+        {
+            "id": "50c3ef159b64420ecca2bd8496f5e0f5",
+            "name": "News Subscription",
+            "url": "httpswww.mynewsdesk.com\/services\/pressroom\/subscription\/",
+            "description": "News Subscription",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "newsdesk_pressroom",
+                    "description": "Set the pressroom to search in. se u2013 Swedish pressroom, no u2013 Norwegian pressroom and en for international pressroom.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "newsdesk_subscriber_email",
+                    "description": "Email address of the subscriber.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "newsdesk_subscribe_to_type",
+                    "description": "Send a parameter with the value 1 for each type of material to be included in the subscription. At least one type is required.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "unique key",
+                    "description": "The MyNewsDesk API Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bdc3e4c266d45968f5a80e784e856ca0",
+            "rawModeData": ""
+        },
+        {
+            "id": "ae154ccc9338ed6cc3bcc94f7a3acef7",
+            "name": "View News",
+            "url": "httpswww.mynewsdesk.com\/services\/pressroom\/view\/",
+            "description": "View News",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "callback",
+                    "description": "If format is JSON and callback is specified, the JSON response is wrapped in a function call with the specified callback name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Specify the format of the response: RSS 2.0, JSON or full XML.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "item_id",
+                    "description": "ID of the material to be fetched.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type_of_media",
+                    "description": "Type of material. Valid values are pressrelease, news, blog_post, event, image, video, document and contact_person.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "unique key",
+                    "description": "The MyNewsDesk API Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bdc3e4c266d45968f5a80e784e856ca0",
+            "rawModeData": ""
+        }
+    ]
+}
