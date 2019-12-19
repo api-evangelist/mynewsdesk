@@ -1,0 +1,89 @@
+{
+    "name": "Mynewsdesk",
+    "description": "Discover the impact of Digital PR! Monitor what is being said about your brand, create your story, identify and engage your audience and analyze the results",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/11441-mynewsdesk.jpg",
+    "tags": [
+        "api provider",
+        "general data",
+        "have api",
+        "news",
+        "news api",
+        "relative data",
+        "service api"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mynewsdesk\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "My News Desk Pressroom List",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/11441-mynewsdesk.jpg",
+            "humanURL": "http:\/\/mynewsdesk.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/my-news-desk-pressroom-list.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/my-news-desk-pressroom-list-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Base",
+            "url": "http:\/\/www.mynewsdesk.com\/services\/"
+        },
+        {
+            "type": "Blog",
+            "url": "http:\/\/www.mynewsdesk.com\/us\/mynewsdesk\/blog_posts"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/mynewsdesk"
+        },
+        {
+            "type": "Developers",
+            "url": "http:\/\/www.mynewsdesk.com\/docs"
+        },
+        {
+            "type": "Documentation",
+            "url": "http:\/\/www.mynewsdesk.com\/docs\/webservice_pressroom"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/mynewsdesk"
+        },
+        {
+            "type": "Terms of Service",
+            "url": "http:\/\/www.mynewsdesk.com\/about\/terms-and-conditions?locale=en"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/mynewsdesk"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/www.mynewsdesk.com"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/mynewsdesk.com"
+        },
+        {
+            "type": "Widget Builder",
+            "url": "http:\/\/www.mynewsdesk.com\/us\/widget\/settings"
+        },
+        {
+            "type": "Wikipedia ",
+            "url": "http:\/\/en.wikipedia.org\/wiki\/Mynewsdesk"
+        }
+    ]
+}
