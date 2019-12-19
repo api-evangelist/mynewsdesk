@@ -1,0 +1,317 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1",
+        "title": "My News Desk Pressroom List",
+        "description": "Mynewsdesk Webservice for newsroom is a way for you, as a registered customer, to fetch information from your newsroom at Mynewsdesk to any system. You can get all your information as XML and create email subscriptions to your material.",
+        "termsOfService": "http:\/\/www.mynewsdesk.com\/about\/terms-and-conditions?locale=en"
+    },
+    "servers": [
+        "httpswww.mynewsdesk.com\/services\/pressroom\/"
+    ],
+    "paths": {
+        "create_comment\/": {
+            "get": {
+                "summary": "Create Comment",
+                "description": "Create Comment",
+                "operationId": "GetCreateComment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "blog",
+                        "in": "query",
+                        "description": "URL of commenters blog\/website."
+                    },
+                    {
+                        "name": "body",
+                        "in": "query",
+                        "description": "Content of comment."
+                    },
+                    {
+                        "name": "commentable_id",
+                        "in": "query",
+                        "description": "ID of the material that is commented."
+                    },
+                    {
+                        "name": "email",
+                        "in": "query",
+                        "description": "Email address of commenter."
+                    },
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Name of commenter."
+                    },
+                    {
+                        "name": "type_of_media",
+                        "in": "query",
+                        "description": "Type of material. Valid values are pressrelease, news, blog_post, event, image, video, document and contact_person."
+                    },
+                    {
+                        "name": "unique key",
+                        "in": "path",
+                        "description": "The MyNewsDesk API Key"
+                    },
+                    {
+                        "name": "user_ip",
+                        "in": "query",
+                        "description": "IP number of commenter. This is needed for easier moderation and spam protection."
+                    }
+                ]
+            }
+        },
+        "list\/": {
+            "get": {
+                "summary": "Lists news",
+                "description": "Lists news",
+                "operationId": "GetList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "archived",
+                        "in": "query",
+                        "description": "Fetch items marked as archived, this is useful for fetching old events. Example: true u2013 Fetches all the items, including archived ones"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "If format is JSON and callback is specified, the JSON response is wrapped in a function call with the specified callback name."
+                    },
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": "Specify the format of the response: RSS 2.0, JSON or full XML."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Set the maximum number of items in the response. This cannot be more than 100."
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Specify which item (sequentially) should be first, skipping preceding items."
+                    },
+                    {
+                        "name": "order",
+                        "in": "query",
+                        "description": "Specify the sort order of the result: publish date (published), latest update (updated) or creation date (created)."
+                    },
+                    {
+                        "name": "pressroom",
+                        "in": "query",
+                        "description": "Set the pressroom to fetch material from. Examples: se u2013 Swedish pressroom, uk u2013 United Kingdom pressroom."
+                    },
+                    {
+                        "name": "type_of_media",
+                        "in": "query",
+                        "description": "Type of material. Valid values are pressrelease, news, blog_post, event, image, video, document and contact_person."
+                    },
+                    {
+                        "name": "unique key",
+                        "in": "path",
+                        "description": "The MyNewsDesk API Key"
+                    }
+                ]
+            }
+        },
+        "pressroom_info\/": {
+            "get": {
+                "summary": "Pressroom Info",
+                "description": "Pressroom Info",
+                "operationId": "GetPressroomInfo",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "pressroom",
+                        "in": "query",
+                        "description": "Set the pressroom to fetch material from. Examples: se u2013 Swedish pressroom, uk u2013 United Kingdom pressroom."
+                    },
+                    {
+                        "name": "unique key",
+                        "in": "path",
+                        "description": "The MyNewsDesk API Key"
+                    }
+                ]
+            }
+        },
+        "search\/": {
+            "get": {
+                "summary": "News Search",
+                "description": "News Search",
+                "operationId": "GetSearch",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "If format is JSON and callback is specified, the JSON response is wrapped in a function call with the specified callback name."
+                    },
+                    {
+                        "name": "date_end",
+                        "in": "query",
+                        "description": "End date. Valid only with date modes between and before. Format: YYYY-MM-DD, e.g. 2006-12-31."
+                    },
+                    {
+                        "name": "date_mode",
+                        "in": "query",
+                        "description": "Specifies how the date parameters are used. Valid values are: between, on, before or after."
+                    },
+                    {
+                        "name": "date_on",
+                        "in": "query",
+                        "description": "Date. Valid only with date mode on. Format: YYYY-MM-DD, e.g. 2006-12-31"
+                    },
+                    {
+                        "name": "date_start",
+                        "in": "query",
+                        "description": "Start date. Valid only with date modes between and after. Format: YYYY-MM-DD, e.g. 2006-12-31."
+                    },
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": "Specify the format of the response: RSS 2.0, JSON or full XML."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Set the maximum number of items in the response. This cannot be more than 100."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page number in the search result"
+                    },
+                    {
+                        "name": "pressroom",
+                        "in": "query",
+                        "description": "Set the pressroom to fetch material from. Examples: se u2013 Swedish pressroom, uk u2013 United Kingdom pressroom."
+                    },
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "Search string. The search is performed on all text fields in the material, like the header, summary and body. Searching supports advanced queries with AND\/OR\/NOT, and wildcards (*)."
+                    },
+                    {
+                        "name": "type_of_media",
+                        "in": "query",
+                        "description": "Type of material. Valid values are pressrelease, news, blog_post, event, image, video, document and contact_person."
+                    },
+                    {
+                        "name": "unique key",
+                        "in": "path",
+                        "description": "The MyNewsDesk API Key"
+                    }
+                ]
+            }
+        },
+        "send_email\/": {
+            "get": {
+                "summary": "Send Email",
+                "description": "Send Email",
+                "operationId": "GetSendEmail",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "from",
+                        "in": "query",
+                        "description": "Name of sender."
+                    },
+                    {
+                        "name": "item_id",
+                        "in": "query",
+                        "description": "ID of the material to be fetched."
+                    },
+                    {
+                        "name": "message",
+                        "in": "query",
+                        "description": "Personal message from the sender to the recipient."
+                    },
+                    {
+                        "name": "to_email",
+                        "in": "query",
+                        "description": "Recipient email address."
+                    },
+                    {
+                        "name": "type_of_media",
+                        "in": "query",
+                        "description": "Type of material. Valid values are pressrelease, news, blog_post, event, image, video, document and contact_person."
+                    },
+                    {
+                        "name": "unique key",
+                        "in": "path",
+                        "description": "The MyNewsDesk API Key"
+                    }
+                ]
+            }
+        },
+        "subscription\/": {
+            "get": {
+                "summary": "News Subscription",
+                "description": "News Subscription",
+                "operationId": "GetSubscription",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "newsdesk_pressroom",
+                        "in": "query",
+                        "description": "Set the pressroom to search in. se u2013 Swedish pressroom, no u2013 Norwegian pressroom and en for international pressroom."
+                    },
+                    {
+                        "name": "newsdesk_subscriber_email",
+                        "in": "query",
+                        "description": "Email address of the subscriber."
+                    },
+                    {
+                        "name": "newsdesk_subscribe_to_type",
+                        "in": "query",
+                        "description": "Send a parameter with the value 1 for each type of material to be included in the subscription. At least one type is required."
+                    },
+                    {
+                        "name": "unique key",
+                        "in": "query",
+                        "description": "The MyNewsDesk API Key"
+                    }
+                ]
+            }
+        },
+        "view\/": {
+            "get": {
+                "summary": "View News",
+                "description": "View News",
+                "operationId": "GetView",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "If format is JSON and callback is specified, the JSON response is wrapped in a function call with the specified callback name."
+                    },
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": "Specify the format of the response: RSS 2.0, JSON or full XML."
+                    },
+                    {
+                        "name": "item_id",
+                        "in": "query",
+                        "description": "ID of the material to be fetched."
+                    },
+                    {
+                        "name": "type_of_media",
+                        "in": "query",
+                        "description": "Type of material. Valid values are pressrelease, news, blog_post, event, image, video, document and contact_person."
+                    },
+                    {
+                        "name": "unique key",
+                        "in": "path",
+                        "description": "The MyNewsDesk API Key"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
