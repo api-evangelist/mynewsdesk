@@ -1,5 +1,5 @@
 {
-    "id": "bdc3e4c266d45968f5a80e784e856ca0",
+    "id": "10ea2abc9f85a2d14b60f7412f3788eb",
     "name": "My News Desk Pressroom List",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "fe1fdf49d3b2df7bbd82120fb226accc",
+            "id": "9628b2d077795bc0fec355eca4252509",
             "name": "Create Comment",
             "url": "httpswww.mynewsdesk.com\/services\/pressroom\/create_comment\/",
             "description": "Create Comment",
@@ -86,11 +86,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bdc3e4c266d45968f5a80e784e856ca0",
+            "collectionId": "10ea2abc9f85a2d14b60f7412f3788eb",
             "rawModeData": ""
         },
         {
-            "id": "bd14f2465cce4341b0edd25f316aedbf",
+            "id": "349756b57d50dc1281b98c58e7fd52f5",
             "name": "Lists news",
             "url": "httpswww.mynewsdesk.com\/services\/pressroom\/list\/",
             "description": "Lists news",
@@ -173,11 +173,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bdc3e4c266d45968f5a80e784e856ca0",
+            "collectionId": "10ea2abc9f85a2d14b60f7412f3788eb",
             "rawModeData": ""
         },
         {
-            "id": "1126fe13e50b910d840da4662156e0ba",
+            "id": "f79d5ac027b7bf9b0929720f75f9a0b9",
             "name": "Pressroom Info",
             "url": "httpswww.mynewsdesk.com\/services\/pressroom\/pressroom_info\/",
             "description": "Pressroom Info",
@@ -211,11 +211,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bdc3e4c266d45968f5a80e784e856ca0",
+            "collectionId": "10ea2abc9f85a2d14b60f7412f3788eb",
             "rawModeData": ""
         },
         {
-            "id": "9387238162b77af822fba77e01ca3eaf",
+            "id": "58b8bc9292a8a70a955e17813e4f8ed4",
             "name": "News Search",
             "url": "httpswww.mynewsdesk.com\/services\/pressroom\/search\/",
             "description": "News Search",
@@ -319,11 +319,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bdc3e4c266d45968f5a80e784e856ca0",
+            "collectionId": "10ea2abc9f85a2d14b60f7412f3788eb",
             "rawModeData": ""
         },
         {
-            "id": "f4c696bff9e7279ef6640139869be33f",
+            "id": "c5ceee3df7097a9dd2b327cf388070be",
             "name": "Send Email",
             "url": "httpswww.mynewsdesk.com\/services\/pressroom\/send_email\/",
             "description": "Send Email",
@@ -385,11 +385,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bdc3e4c266d45968f5a80e784e856ca0",
+            "collectionId": "10ea2abc9f85a2d14b60f7412f3788eb",
             "rawModeData": ""
         },
         {
-            "id": "50c3ef159b64420ecca2bd8496f5e0f5",
+            "id": "84d51cbbe69ff5828a698ac810b5ba73",
             "name": "News Subscription",
             "url": "httpswww.mynewsdesk.com\/services\/pressroom\/subscription\/",
             "description": "News Subscription",
@@ -437,11 +437,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bdc3e4c266d45968f5a80e784e856ca0",
+            "collectionId": "10ea2abc9f85a2d14b60f7412f3788eb",
             "rawModeData": ""
         },
         {
-            "id": "ae154ccc9338ed6cc3bcc94f7a3acef7",
+            "id": "1b9f4f1b21cbb58f11296ef1a16c0a53",
             "name": "View News",
             "url": "httpswww.mynewsdesk.com\/services\/pressroom\/view\/",
             "description": "View News",
@@ -496,7 +496,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bdc3e4c266d45968f5a80e784e856ca0",
+            "collectionId": "10ea2abc9f85a2d14b60f7412f3788eb",
             "rawModeData": ""
         }
     ]
